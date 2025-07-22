@@ -2,6 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Smartphone, Target, Trophy, Users, Play, Download, Apple, PlayCircle } from "lucide-react";
+import appScreenshot1 from "@/assets/app-screenshot-1.png";
+import appScreenshot2 from "@/assets/app-screenshot-2.png";
+import appScreenshot3 from "@/assets/app-screenshot-3.png";
 
 const LandingPage = () => {
   return (
@@ -14,7 +17,7 @@ const LandingPage = () => {
               <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
                 <Target className="h-5 w-5 text-primary-foreground" />
               </div>
-              <span className="font-bold text-xl">KnuckleBall AI</span>
+              <span className="font-bold text-xl">Golazo AI</span>
             </div>
           </div>
           <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
@@ -36,12 +39,12 @@ const LandingPage = () => {
                 Master the Perfect Free Kick
               </Badge>
               <h1 className="text-3xl font-bold tracking-tighter text-white sm:text-4xl md:text-5xl lg:text-6xl">
-                Learn Ronaldo's
+                Master Football Skills
                 <br />
-                <span className="text-primary-foreground">Knuckleball Technique</span>
+                <span className="text-primary-foreground">with AI Analysis</span>
               </h1>
               <p className="mx-auto max-w-[700px] text-white/90 md:text-xl">
-                Master the art of the knuckleball free kick with AI-powered analysis. Record your shots, get instant feedback, and compete with friends to become the ultimate free kick specialist.
+                Perfect your shooting technique with AI-powered analysis. Record your shots, get instant feedback, and compete with friends to become the ultimate goal scorer.
               </p>
             </div>
             <div className="space-x-4 flex flex-col sm:flex-row gap-4">
@@ -58,6 +61,88 @@ const LandingPage = () => {
         </div>
       </section>
 
+      {/* App Preview Section */}
+      <section className="py-20">
+        <div className="container px-4 md:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+            <div className="space-y-6">
+              <Badge variant="secondary">
+                AI-Powered Analysis
+              </Badge>
+              <h3 className="text-3xl font-bold tracking-tighter">
+                Track Your Shots
+              </h3>
+              <p className="text-muted-foreground text-lg">
+                Get detailed analytics on every shot you take. Our AI analyzes your technique, ball trajectory, and provides personalized feedback to help you improve.
+              </p>
+            </div>
+            <div className="lg:col-span-2 flex justify-center">
+              <div className="relative">
+                <img 
+                  src={appScreenshot1} 
+                  alt="Golazo AI shot analysis interface" 
+                  className="max-w-xs rounded-2xl shadow-2xl"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gradient-section">
+        <div className="container px-4 md:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+            <div className="lg:col-span-2 flex justify-center order-2 lg:order-1">
+              <div className="relative">
+                <img 
+                  src={appScreenshot2} 
+                  alt="Golazo AI video analysis with motion tracking" 
+                  className="max-w-xs rounded-2xl shadow-2xl"
+                />
+              </div>
+            </div>
+            <div className="space-y-6 order-1 lg:order-2">
+              <Badge variant="secondary">
+                Video Analysis
+              </Badge>
+              <h3 className="text-3xl font-bold tracking-tighter">
+                Motion Tracking
+              </h3>
+              <p className="text-muted-foreground text-lg">
+                Advanced computer vision technology tracks your movement and ball contact in real-time, providing detailed insights into your shooting technique.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20">
+        <div className="container px-4 md:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+            <div className="space-y-6">
+              <Badge variant="secondary">
+                Social Competition
+              </Badge>
+              <h3 className="text-3xl font-bold tracking-tighter">
+                Compete & Achieve
+              </h3>
+              <p className="text-muted-foreground text-lg">
+                Challenge friends, climb leaderboards, and unlock achievements. Make training fun with our gamified approach to football skill development.
+              </p>
+            </div>
+            <div className="lg:col-span-2 flex justify-center">
+              <div className="relative">
+                <img 
+                  src={appScreenshot3} 
+                  alt="Golazo AI leaderboards and achievements" 
+                  className="max-w-xs rounded-2xl shadow-2xl"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
       <section id="features" className="py-20 bg-gradient-section">
         <div className="container px-4 md:px-6">
@@ -69,7 +154,7 @@ const LandingPage = () => {
               Master Your Technique
             </h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl mt-4">
-              Advanced AI analysis helps you perfect your knuckleball technique with personalized feedback and gamified learning.
+              Advanced AI analysis helps you perfect your shooting technique with personalized feedback and gamified learning.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -163,7 +248,7 @@ const LandingPage = () => {
               Get Started
             </Badge>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Download KnuckleBall AI
+              Download Golazo AI
             </h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl mt-4">
               Start your journey to mastering the perfect free kick. Available on iOS and Android.
@@ -232,10 +317,10 @@ const LandingPage = () => {
                 <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
                   <Target className="h-5 w-5 text-primary-foreground" />
                 </div>
-                <span className="font-bold text-xl">KnuckleBall AI</span>
+                <span className="font-bold text-xl">Golazo AI</span>
               </div>
               <p className="text-muted-foreground">
-                Master the perfect free kick with AI-powered analysis and training.
+                Master football skills with AI-powered analysis and training.
               </p>
             </div>
             <div>
@@ -264,7 +349,7 @@ const LandingPage = () => {
             </div>
           </div>
           <div className="border-t mt-8 pt-8 text-center text-muted-foreground">
-            <p>&copy; 2024 KnuckleBall AI. All rights reserved.</p>
+            <p>&copy; 2024 Golazo AI. All rights reserved.</p>
           </div>
         </div>
       </footer>
