@@ -2,9 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Smartphone, Target, Trophy, Users, Play, Download, Apple, PlayCircle } from "lucide-react";
-import appScreenshot1 from "@/assets/app-screenshot-1.png";
-import appScreenshot2 from "@/assets/app-screenshot-2.png";
-import appScreenshot3 from "@/assets/app-screenshot-3.png";
 
 const LandingPage = () => {
   return (
@@ -14,9 +11,11 @@ const LandingPage = () => {
         <div className="container flex h-16 items-center">
           <div className="mr-4 flex">
             <div className="mr-6 flex items-center space-x-2">
-              <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-                <Target className="h-5 w-5 text-primary-foreground" />
-              </div>
+              <img 
+                src="/lovable-uploads/58dc850b-44ff-491e-93e4-b101d64c5ccd.png" 
+                alt="Golazo AI Logo" 
+                className="h-8 w-8"
+              />
               <span className="font-bold text-xl">Golazo AI</span>
             </div>
           </div>
@@ -78,11 +77,9 @@ const LandingPage = () => {
             </div>
             <div className="lg:col-span-2 flex justify-center">
               <div className="relative">
-                <img 
-                  src={appScreenshot1} 
-                  alt="Golazo AI shot analysis interface" 
-                  className="max-w-xs rounded-2xl shadow-2xl"
-                />
+                <div className="max-w-xs h-64 bg-muted rounded-2xl shadow-2xl flex items-center justify-center">
+                  <p className="text-muted-foreground">Your App Screenshot 1</p>
+                </div>
               </div>
             </div>
           </div>
@@ -94,11 +91,9 @@ const LandingPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
             <div className="lg:col-span-2 flex justify-center order-2 lg:order-1">
               <div className="relative">
-                <img 
-                  src={appScreenshot2} 
-                  alt="Golazo AI video analysis with motion tracking" 
-                  className="max-w-xs rounded-2xl shadow-2xl"
-                />
+                <div className="max-w-xs h-64 bg-muted rounded-2xl shadow-2xl flex items-center justify-center">
+                  <p className="text-muted-foreground">Your App Screenshot 2</p>
+                </div>
               </div>
             </div>
             <div className="space-y-6 order-1 lg:order-2">
@@ -132,11 +127,9 @@ const LandingPage = () => {
             </div>
             <div className="lg:col-span-2 flex justify-center">
               <div className="relative">
-                <img 
-                  src={appScreenshot3} 
-                  alt="Golazo AI leaderboards and achievements" 
-                  className="max-w-xs rounded-2xl shadow-2xl"
-                />
+                <div className="max-w-xs h-64 bg-muted rounded-2xl shadow-2xl flex items-center justify-center">
+                  <p className="text-muted-foreground">Your App Screenshot 3</p>
+                </div>
               </div>
             </div>
           </div>
@@ -314,9 +307,11 @@ const LandingPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
-                <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-                  <Target className="h-5 w-5 text-primary-foreground" />
-                </div>
+                <img 
+                  src="/lovable-uploads/58dc850b-44ff-491e-93e4-b101d64c5ccd.png" 
+                  alt="Golazo AI Logo" 
+                  className="h-8 w-8"
+                />
                 <span className="font-bold text-xl">Golazo AI</span>
               </div>
               <p className="text-muted-foreground">
