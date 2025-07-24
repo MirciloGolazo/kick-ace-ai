@@ -2,6 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Smartphone, Target, Trophy, Users, Play, Download, Apple, PlayCircle } from "lucide-react";
+import appScreenshot1 from "@/assets/app-screenshot-1.png";
+import appScreenshot2 from "@/assets/app-screenshot-2.png";
+import appScreenshot3 from "@/assets/app-screenshot-3.png";
 
 const LandingPage = () => {
   return (
@@ -37,21 +40,21 @@ const LandingPage = () => {
               <Badge variant="secondary" className="mb-4">
                 Master the Perfect Free Kick
               </Badge>
-              <h1 className="text-3xl font-bold tracking-tighter text-white sm:text-4xl md:text-5xl lg:text-6xl">
+              <h1 className="text-3xl font-bold tracking-tighter text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
                 Master Football Skills
                 <br />
-                <span className="text-primary-foreground">with AI Analysis</span>
+                <span className="text-primary">with AI Analysis</span>
               </h1>
-              <p className="mx-auto max-w-[700px] text-white/90 md:text-xl">
+              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
                 Perfect your shooting technique with AI-powered analysis. Record your shots, get instant feedback, and compete with friends to become the ultimate goal scorer.
               </p>
             </div>
             <div className="space-x-4 flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
                 <Download className="mr-2 h-4 w-4" />
                 Download Now
               </Button>
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+              <Button variant="secondary" size="lg">
                 <Play className="mr-2 h-4 w-4" />
                 Watch Demo
               </Button>
@@ -77,9 +80,11 @@ const LandingPage = () => {
             </div>
             <div className="lg:col-span-2 flex justify-center">
               <div className="relative">
-                <div className="max-w-xs h-64 bg-muted rounded-2xl shadow-2xl flex items-center justify-center">
-                  <p className="text-muted-foreground">Your App Screenshot 1</p>
-                </div>
+                <img 
+                  src={appScreenshot1} 
+                  alt="Golazo AI shot analysis interface" 
+                  className="max-w-xs rounded-2xl shadow-2xl"
+                />
               </div>
             </div>
           </div>
@@ -91,9 +96,11 @@ const LandingPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
             <div className="lg:col-span-2 flex justify-center order-2 lg:order-1">
               <div className="relative">
-                <div className="max-w-xs h-64 bg-muted rounded-2xl shadow-2xl flex items-center justify-center">
-                  <p className="text-muted-foreground">Your App Screenshot 2</p>
-                </div>
+                <img 
+                  src={appScreenshot2} 
+                  alt="Golazo AI leaderboard and competition" 
+                  className="max-w-xs rounded-2xl shadow-2xl"
+                />
               </div>
             </div>
             <div className="space-y-6 order-1 lg:order-2">
@@ -127,9 +134,11 @@ const LandingPage = () => {
             </div>
             <div className="lg:col-span-2 flex justify-center">
               <div className="relative">
-                <div className="max-w-xs h-64 bg-muted rounded-2xl shadow-2xl flex items-center justify-center">
-                  <p className="text-muted-foreground">Your App Screenshot 3</p>
-                </div>
+                <img 
+                  src={appScreenshot3} 
+                  alt="Golazo AI feedback and technique analysis" 
+                  className="max-w-xs rounded-2xl shadow-2xl"
+                />
               </div>
             </div>
           </div>

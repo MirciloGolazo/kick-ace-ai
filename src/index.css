@@ -8,36 +8,39 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 26% 96%;
-    --foreground: 220 9% 15%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 11%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 9% 15%;
+    --card-foreground: 0 0% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 9% 15%;
+    --popover-foreground: 0 0% 11%;
 
-    --primary: 142 76% 36%;
-    --primary-foreground: 0 0% 100%;
+    /* Brand colors from your palette - #DBFD00 converted to HSL */
+    --primary: 69 100% 49%;
+    --primary-foreground: 0 0% 11%;
 
-    --secondary: 220 13% 91%;
-    --secondary-foreground: 220 9% 15%;
+    /* Secondary color from your palette - #BFC1F9 converted to HSL */
+    --secondary: 238 83% 86%;
+    --secondary-foreground: 0 0% 11%;
 
-    --muted: 220 13% 91%;
-    --muted-foreground: 220 9% 46%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 220 13% 91%;
-    --accent-foreground: 220 9% 15%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 142 76% 36%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 69 100% 49%;
 
-    --gradient-hero: linear-gradient(135deg, 142 76% 36%, 142 76% 26%);
-    --gradient-section: linear-gradient(180deg, 220 26% 98%, 220 26% 96%);
+    /* Beautiful gradients using your brand colors */
+    --gradient-hero: linear-gradient(135deg, hsl(69 100% 49%), hsl(238 83% 86%));
+    --gradient-section: linear-gradient(180deg, hsl(0 0% 98%), hsl(210 40% 96%));
 
     --radius: 0.5rem;
 
@@ -59,36 +62,36 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 220 27% 8%;
-    --foreground: 220 9% 96%;
+    --background: 0 0% 11%;
+    --foreground: 0 0% 98%;
 
-    --card: 220 27% 10%;
-    --card-foreground: 220 9% 96%;
+    --card: 0 0% 11%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 220 27% 10%;
-    --popover-foreground: 220 9% 96%;
+    --popover: 0 0% 11%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 142 76% 36%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 69 100% 49%;
+    --primary-foreground: 0 0% 11%;
 
-    --secondary: 220 27% 16%;
-    --secondary-foreground: 220 9% 96%;
+    --secondary: 238 83% 86%;
+    --secondary-foreground: 0 0% 11%;
 
-    --muted: 220 27% 16%;
-    --muted-foreground: 220 9% 65%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 240 5% 64.9%;
 
-    --accent: 220 27% 16%;
-    --accent-foreground: 220 9% 96%;
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 62% 51%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 27% 16%;
-    --input: 220 27% 16%;
-    --ring: 142 76% 36%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 69 100% 49%;
 
-    --gradient-hero: linear-gradient(135deg, 142 76% 36%, 142 76% 26%);
-    --gradient-section: linear-gradient(180deg, 220 27% 10%, 220 27% 8%);
+    --gradient-hero: linear-gradient(135deg, hsl(69 100% 49%), hsl(238 83% 86%));
+    --gradient-section: linear-gradient(180deg, hsl(0 0% 15%), hsl(0 0% 11%));
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -107,5 +110,6 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Nunito', sans-serif;
   }
 }
