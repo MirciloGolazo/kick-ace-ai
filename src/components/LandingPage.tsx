@@ -2,11 +2,14 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Smartphone, Target, Trophy, Users, Play, Download, Apple, PlayCircle } from "lucide-react";
+import { useLanguage } from "@/hooks/useLanguage";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import appScreenshot1 from "@/assets/app-screenshot-1.png";
 import appScreenshot2 from "@/assets/app-screenshot-2.png";
 import appScreenshot3 from "@/assets/app-screenshot-3.png";
 
 const LandingPage = () => {
+  const { t } = useLanguage();
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
@@ -24,10 +27,11 @@ const LandingPage = () => {
           </div>
           <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
             <nav className="flex items-center space-x-6 text-sm font-medium">
-              <a href="#features" className="transition-colors hover:text-foreground/80 text-foreground/60">Features</a>
-              <a href="#download" className="transition-colors hover:text-foreground/80 text-foreground/60">Download</a>
-              <a href="#about" className="transition-colors hover:text-foreground/80 text-foreground/60">About</a>
+              <a href="#features" className="transition-colors hover:text-foreground/80 text-foreground/60">{t('nav.features')}</a>
+              <a href="#download" className="transition-colors hover:text-foreground/80 text-foreground/60">{t('nav.download')}</a>
+              <a href="#about" className="transition-colors hover:text-foreground/80 text-foreground/60">{t('nav.about')}</a>
             </nav>
+            <LanguageSwitcher />
           </div>
         </div>
       </nav>
@@ -38,25 +42,25 @@ const LandingPage = () => {
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
               <Badge variant="secondary" className="mb-4">
-                Master the Perfect Free Kick
+                {t('hero.badge')}
               </Badge>
               <h1 className="text-3xl font-bold tracking-tighter text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
-                Master Football Skills
+                {t('hero.title')}
                 <br />
-                <span className="text-primary">with AI Analysis</span>
+                <span className="text-primary">{t('hero.titleHighlight')}</span>
               </h1>
               <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                Perfect your shooting technique with AI-powered analysis. Record your shots, get instant feedback, and compete with friends to become the ultimate goal scorer.
+                {t('hero.description')}
               </p>
             </div>
             <div className="space-x-4 flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
                 <Download className="mr-2 h-4 w-4" />
-                Download Now
+                {t('hero.downloadBtn')}
               </Button>
               <Button variant="secondary" size="lg">
                 <Play className="mr-2 h-4 w-4" />
-                Watch Demo
+                {t('hero.watchDemo')}
               </Button>
             </div>
           </div>
@@ -69,13 +73,13 @@ const LandingPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
             <div className="space-y-6">
               <Badge variant="secondary">
-                AI-Powered Analysis
+                {t('preview1.badge')}
               </Badge>
               <h3 className="text-3xl font-bold tracking-tighter">
-                Track Your Shots
+                {t('preview1.title')}
               </h3>
               <p className="text-muted-foreground text-lg">
-                Get detailed analytics on every shot you take. Our AI analyzes your technique, ball trajectory, and provides personalized feedback to help you improve.
+                {t('preview1.description')}
               </p>
             </div>
             <div className="lg:col-span-2 flex justify-center">
@@ -105,13 +109,13 @@ const LandingPage = () => {
             </div>
             <div className="space-y-6 order-1 lg:order-2">
               <Badge variant="secondary">
-                Video Analysis
+                {t('preview2.badge')}
               </Badge>
               <h3 className="text-3xl font-bold tracking-tighter">
-                Motion Tracking
+                {t('preview2.title')}
               </h3>
               <p className="text-muted-foreground text-lg">
-                Advanced computer vision technology tracks your movement and ball contact in real-time, providing detailed insights into your shooting technique.
+                {t('preview2.description')}
               </p>
             </div>
           </div>
@@ -123,13 +127,13 @@ const LandingPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
             <div className="space-y-6">
               <Badge variant="secondary">
-                Social Competition
+                {t('preview3.badge')}
               </Badge>
               <h3 className="text-3xl font-bold tracking-tighter">
-                Compete & Achieve
+                {t('preview3.title')}
               </h3>
               <p className="text-muted-foreground text-lg">
-                Challenge friends, climb leaderboards, and unlock achievements. Make training fun with our gamified approach to football skill development.
+                {t('preview3.description')}
               </p>
             </div>
             <div className="lg:col-span-2 flex justify-center">
@@ -150,13 +154,13 @@ const LandingPage = () => {
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
             <Badge variant="secondary" className="mb-4">
-              Features
+              {t('features.badge')}
             </Badge>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Master Your Technique
+              {t('features.title')}
             </h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl mt-4">
-              Advanced AI analysis helps you perfect your shooting technique with personalized feedback and gamified learning.
+              {t('features.description')}
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -167,9 +171,9 @@ const LandingPage = () => {
                     <Smartphone className="h-6 w-6 text-primary" />
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">AI Shot Analysis</h3>
+                <h3 className="text-xl font-semibold mb-2">{t('feature1.title')}</h3>
                 <p className="text-muted-foreground">
-                  Record your free kicks and get instant AI feedback on your technique, ball contact, and trajectory.
+                  {t('feature1.description')}
                 </p>
               </CardContent>
             </Card>
@@ -180,9 +184,9 @@ const LandingPage = () => {
                     <Target className="h-6 w-6 text-primary" />
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Precision Training</h3>
+                <h3 className="text-xl font-semibold mb-2">{t('feature2.title')}</h3>
                 <p className="text-muted-foreground">
-                  Learn the exact technique Cristiano Ronaldo uses for his signature knuckleball free kicks.
+                  {t('feature2.description')}
                 </p>
               </CardContent>
             </Card>
@@ -193,9 +197,9 @@ const LandingPage = () => {
                     <Trophy className="h-6 w-6 text-primary" />
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Points & Achievements</h3>
+                <h3 className="text-xl font-semibold mb-2">{t('feature3.title')}</h3>
                 <p className="text-muted-foreground">
-                  Earn points for successful shots and unlock achievements as you master different techniques.
+                  {t('feature3.description')}
                 </p>
               </CardContent>
             </Card>
@@ -206,9 +210,9 @@ const LandingPage = () => {
                     <Users className="h-6 w-6 text-primary" />
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Compete with Friends</h3>
+                <h3 className="text-xl font-semibold mb-2">{t('feature4.title')}</h3>
                 <p className="text-muted-foreground">
-                  Challenge your friends in free kick competitions and climb the leaderboards.
+                  {t('feature4.description')}
                 </p>
               </CardContent>
             </Card>
@@ -219,9 +223,9 @@ const LandingPage = () => {
                     <Play className="h-6 w-6 text-primary" />
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Video Tutorials</h3>
+                <h3 className="text-xl font-semibold mb-2">{t('feature5.title')}</h3>
                 <p className="text-muted-foreground">
-                  Access detailed video tutorials breaking down the physics and technique of the perfect knuckleball.
+                  {t('feature5.description')}
                 </p>
               </CardContent>
             </Card>
@@ -232,9 +236,9 @@ const LandingPage = () => {
                     <ArrowRight className="h-6 w-6 text-primary" />
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Progress Tracking</h3>
+                <h3 className="text-xl font-semibold mb-2">{t('feature6.title')}</h3>
                 <p className="text-muted-foreground">
-                  Track your improvement over time with detailed analytics and personalized training plans.
+                  {t('feature6.description')}
                 </p>
               </CardContent>
             </Card>
@@ -247,23 +251,23 @@ const LandingPage = () => {
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
             <Badge variant="secondary" className="mb-4">
-              Get Started
+              {t('download.badge')}
             </Badge>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Download Golazo AI
+              {t('download.title')}
             </h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl mt-4">
-              Start your journey to mastering the perfect free kick. Available on iOS and Android.
+              {t('download.description')}
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button size="lg" className="min-w-48">
               <Apple className="mr-2 h-5 w-5" />
-              Download for iOS
+              {t('download.ios')}
             </Button>
             <Button variant="outline" size="lg" className="min-w-48">
               <PlayCircle className="mr-2 h-5 w-5" />
-              Download for Android
+              {t('download.android')}
             </Button>
           </div>
         </div>
@@ -274,37 +278,37 @@ const LandingPage = () => {
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
             <Badge variant="secondary" className="mb-4">
-              About
+              {t('about.badge')}
             </Badge>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              The Science Behind the Perfect Free Kick
+              {t('about.title')}
             </h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl mt-4">
-              Our AI analyzes thousands of data points from professional free kicks to help you understand and master the knuckleball technique that makes goalkeepers helpless.
+              {t('about.description')}
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <div>
-                <h3 className="text-2xl font-semibold mb-3">What is a Knuckleball?</h3>
+                <h3 className="text-2xl font-semibold mb-3">{t('about.knuckleball.title')}</h3>
                 <p className="text-muted-foreground">
-                  The knuckleball is a technique where the ball travels with minimal rotation, causing unpredictable movement through the air. Cristiano Ronaldo has perfected this technique, making his free kicks nearly impossible to save.
+                  {t('about.knuckleball.description')}
                 </p>
               </div>
               <div>
-                <h3 className="text-2xl font-semibold mb-3">AI-Powered Analysis</h3>
+                <h3 className="text-2xl font-semibold mb-3">{t('about.ai.title')}</h3>
                 <p className="text-muted-foreground">
-                  Our advanced computer vision technology analyzes your shooting technique in real-time, providing instant feedback on foot placement, ball contact, and follow-through to help you achieve the perfect knuckleball effect.
+                  {t('about.ai.description')}
                 </p>
               </div>
             </div>
             <div className="bg-muted rounded-lg p-8 text-center">
               <div className="text-4xl font-bold text-primary mb-2">10,000+</div>
-              <p className="text-muted-foreground mb-4">Free kicks analyzed</p>
+              <p className="text-muted-foreground mb-4">{t('about.stats.kicks')}</p>
               <div className="text-4xl font-bold text-primary mb-2">95%</div>
-              <p className="text-muted-foreground mb-4">Accuracy improvement</p>
-              <div className="text-4xl font-bold text-primary mb-2">5 Minutes</div>
-              <p className="text-muted-foreground">Average learning time</p>
+              <p className="text-muted-foreground mb-4">{t('about.stats.accuracy')}</p>
+              <div className="text-4xl font-bold text-primary mb-2">5 {t('about.stats.time').includes('Minutes') ? 'Minutes' : t('about.stats.time').split(' ')[1]}</div>
+              <p className="text-muted-foreground">{t('about.stats.time')}</p>
             </div>
           </div>
         </div>
@@ -324,36 +328,36 @@ const LandingPage = () => {
                 <span className="font-bold text-xl">Golazo AI</span>
               </div>
               <p className="text-muted-foreground">
-                Master football skills with AI-powered analysis and training.
+                {t('footer.description')}
               </p>
             </div>
             <div>
-              <h4 className="font-semibold mb-3">Product</h4>
+              <h4 className="font-semibold mb-3">{t('footer.product')}</h4>
               <ul className="space-y-2 text-muted-foreground">
-                <li><a href="#features" className="hover:text-foreground">Features</a></li>
-                <li><a href="#download" className="hover:text-foreground">Download</a></li>
-                <li><a href="#" className="hover:text-foreground">Pricing</a></li>
+                <li><a href="#features" className="hover:text-foreground">{t('nav.features')}</a></li>
+                <li><a href="#download" className="hover:text-foreground">{t('nav.download')}</a></li>
+                <li><a href="#" className="hover:text-foreground">{t('footer.pricing')}</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-3">Support</h4>
+              <h4 className="font-semibold mb-3">{t('footer.support')}</h4>
               <ul className="space-y-2 text-muted-foreground">
-                <li><a href="#" className="hover:text-foreground">Help Center</a></li>
-                <li><a href="#" className="hover:text-foreground">Contact Us</a></li>
-                <li><a href="#" className="hover:text-foreground">Privacy Policy</a></li>
+                <li><a href="#" className="hover:text-foreground">{t('footer.help')}</a></li>
+                <li><a href="#" className="hover:text-foreground">{t('footer.contact')}</a></li>
+                <li><a href="#" className="hover:text-foreground">{t('footer.privacy')}</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-3">Connect</h4>
+              <h4 className="font-semibold mb-3">{t('footer.connect')}</h4>
               <ul className="space-y-2 text-muted-foreground">
-                <li><a href="#" className="hover:text-foreground">Twitter</a></li>
-                <li><a href="#" className="hover:text-foreground">Instagram</a></li>
-                <li><a href="#" className="hover:text-foreground">YouTube</a></li>
+                <li><a href="#" className="hover:text-foreground">{t('footer.twitter')}</a></li>
+                <li><a href="#" className="hover:text-foreground">{t('footer.instagram')}</a></li>
+                <li><a href="#" className="hover:text-foreground">{t('footer.youtube')}</a></li>
               </ul>
             </div>
           </div>
           <div className="border-t mt-8 pt-8 text-center text-muted-foreground">
-            <p>&copy; 2024 Golazo AI. All rights reserved.</p>
+            <p>{t('footer.copyright')}</p>
           </div>
         </div>
       </footer>
