@@ -259,8 +259,26 @@ const translations = {
   },
 };
 
+const detectBrowserLanguage = (): Language => {
+  const browserLang = navigator.language.toLowerCase();
+  
+  // Danish detection
+  if (browserLang.startsWith('da') || browserLang === 'da-dk') {
+    return 'da';
+  }
+  
+  // Spanish detection
+  if (browserLang.startsWith('es') || 
+      ['es-es', 'es-mx', 'es-ar', 'es-co', 'es-cl', 'es-pe', 'es-ve', 'es-ec', 'es-gt', 'es-cu', 'es-bo', 'es-do', 'es-hn', 'es-py', 'es-sv', 'es-ni', 'es-cr', 'es-pa', 'es-uy', 'es-pr'].includes(browserLang)) {
+    return 'es';
+  }
+  
+  // Default to English
+  return 'en';
+};
+
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = useState<Language>('en');
+  const [language, setLanguage] = useState<Language>(() => detectBrowserLanguage());
 
   const t = (key: string): string => {
     return translations[language][key as keyof typeof translations['en']] || key;
