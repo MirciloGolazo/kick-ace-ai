@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Smartphone, Target, Trophy, Users, Play, Download, Apple, PlayCircle } from "lucide-react";
+import { ArrowRight, Smartphone, Target, Trophy, Users, Play, Apple, PlayCircle } from "lucide-react";
 import { useLanguage } from "@/hooks/useLanguage";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import appScreenshot1 from "@/assets/app-screenshot-1.png";
@@ -20,7 +20,7 @@ const LandingPage = () => {
               <img 
                 src="/lovable-uploads/58dc850b-44ff-491e-93e4-b101d64c5ccd.png" 
                 alt="Golazo AI Logo" 
-                className="h-10 w-10"
+                className="h-8 w-auto"
               />
               <span className="font-bold text-xl">Golazo AI</span>
             </div>
@@ -63,13 +63,13 @@ const LandingPage = () => {
               </p>
             </div>
             <div className="space-x-4 flex flex-col sm:flex-row gap-4 pt-4">
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6">
-                <Download className="mr-2 h-5 w-5" />
-                {t('hero.downloadBtn')}
+              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 min-w-48">
+                <Apple className="mr-2 h-5 w-5" />
+                {t('download.ios')}
               </Button>
-              <Button variant="outline" size="lg" className="bg-white/10 text-white border-white/20 hover:bg-white/20 text-lg px-8 py-6">
-                <Play className="mr-2 h-5 w-5" />
-                {t('hero.watchDemo')}
+              <Button variant="outline" size="lg" className="bg-white/10 text-white border-white/20 hover:bg-white/20 text-lg px-8 py-6 min-w-48">
+                <PlayCircle className="mr-2 h-5 w-5" />
+                {t('download.android')}
               </Button>
             </div>
           </div>
@@ -255,28 +255,24 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Download Section */}
+      {/* Watch Demo Section */}
       <section id="download" className="py-20">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
             <Badge variant="secondary" className="mb-4">
-              {t('download.badge')}
+              {t('hero.watchDemo')}
             </Badge>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              {t('download.title')}
+              See Golazo AI in Action
             </h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl mt-4">
-              {t('download.description')}
+              Watch how our AI analyzes your technique and provides instant feedback to improve your free kicks.
             </p>
           </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" className="min-w-48">
-              <Apple className="mr-2 h-5 w-5" />
-              {t('download.ios')}
-            </Button>
+          <div className="flex justify-center">
             <Button variant="outline" size="lg" className="min-w-48">
-              <PlayCircle className="mr-2 h-5 w-5" />
-              {t('download.android')}
+              <Play className="mr-2 h-5 w-5" />
+              {t('hero.watchDemo')}
             </Button>
           </div>
         </div>
@@ -332,7 +328,7 @@ const LandingPage = () => {
                 <img 
                   src="/lovable-uploads/58dc850b-44ff-491e-93e4-b101d64c5ccd.png" 
                   alt="Golazo AI Logo" 
-                  className="h-10 w-10"
+                  className="h-8 w-auto"
                 />
                 <span className="font-bold text-xl">Golazo AI</span>
               </div>
