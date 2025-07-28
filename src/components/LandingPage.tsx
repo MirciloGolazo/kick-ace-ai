@@ -62,12 +62,12 @@ const LandingPage = () => {
                 {t('hero.description')}
               </p>
             </div>
-            <div className="space-x-4 flex flex-col sm:flex-row gap-4 pt-4">
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 min-w-48">
+            <div className="flex flex-col gap-4 pt-4 w-full max-w-md mx-auto">
+              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 w-full">
                 <Apple className="mr-2 h-5 w-5" />
                 {t('download.ios')}
               </Button>
-              <Button variant="outline" size="lg" className="bg-white/10 text-white border-white/20 hover:bg-white/20 text-lg px-8 py-6 min-w-48">
+              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 w-full">
                 <PlayCircle className="mr-2 h-5 w-5" />
                 {t('download.android')}
               </Button>
