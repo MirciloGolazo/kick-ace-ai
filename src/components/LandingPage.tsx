@@ -20,7 +20,7 @@ const LandingPage = () => {
               <img 
                 src="/lovable-uploads/58dc850b-44ff-491e-93e4-b101d64c5ccd.png" 
                 alt="Golazo AI Logo" 
-                className="h-8 w-8"
+                className="h-10 w-10"
               />
               <span className="font-bold text-xl">Golazo AI</span>
             </div>
@@ -36,30 +36,39 @@ const LandingPage = () => {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="bg-gradient-hero py-20 md:py-32">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center space-y-4 text-center">
-            <div className="space-y-2">
-              <Badge variant="secondary" className="mb-4">
+      {/* Hero Section with Video Background */}
+      <section className="relative bg-gradient-hero py-20 md:py-32 overflow-hidden">
+        {/* Video Background Placeholder */}
+        <div className="absolute inset-0 z-0">
+          <div className="w-full h-full bg-gradient-to-r from-black/60 to-black/40">
+            {/* Placeholder for video - replace this div with video element later */}
+            <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1920&auto=format&fit=crop')] bg-cover bg-center opacity-50"></div>
+          </div>
+        </div>
+        
+        {/* Content overlay */}
+        <div className="relative z-10 container px-4 md:px-6">
+          <div className="flex flex-col items-center space-y-6 text-center">
+            <div className="space-y-4">
+              <Badge variant="secondary" className="mb-4 bg-white/10 text-white border-white/20">
                 {t('hero.badge')}
               </Badge>
-              <h1 className="text-3xl font-bold tracking-tighter text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
+              <h1 className="text-4xl font-bold tracking-tighter text-white sm:text-5xl md:text-6xl lg:text-7xl">
                 {t('hero.title')}
                 <br />
                 <span className="text-primary">{t('hero.titleHighlight')}</span>
               </h1>
-              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+              <p className="mx-auto max-w-[700px] text-white/90 md:text-xl lg:text-2xl">
                 {t('hero.description')}
               </p>
             </div>
-            <div className="space-x-4 flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-                <Download className="mr-2 h-4 w-4" />
+            <div className="space-x-4 flex flex-col sm:flex-row gap-4 pt-4">
+              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6">
+                <Download className="mr-2 h-5 w-5" />
                 {t('hero.downloadBtn')}
               </Button>
-              <Button variant="secondary" size="lg">
-                <Play className="mr-2 h-4 w-4" />
+              <Button variant="outline" size="lg" className="bg-white/10 text-white border-white/20 hover:bg-white/20 text-lg px-8 py-6">
+                <Play className="mr-2 h-5 w-5" />
                 {t('hero.watchDemo')}
               </Button>
             </div>
@@ -323,7 +332,7 @@ const LandingPage = () => {
                 <img 
                   src="/lovable-uploads/58dc850b-44ff-491e-93e4-b101d64c5ccd.png" 
                   alt="Golazo AI Logo" 
-                  className="h-8 w-8"
+                  className="h-10 w-10"
                 />
                 <span className="font-bold text-xl">Golazo AI</span>
               </div>
@@ -336,21 +345,20 @@ const LandingPage = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li><a href="#features" className="hover:text-foreground">{t('nav.features')}</a></li>
                 <li><a href="#download" className="hover:text-foreground">{t('nav.download')}</a></li>
-                <li><a href="#" className="hover:text-foreground">{t('footer.pricing')}</a></li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-3">{t('footer.support')}</h4>
               <ul className="space-y-2 text-muted-foreground">
-                <li><a href="#" className="hover:text-foreground">{t('footer.help')}</a></li>
                 <li><a href="#" className="hover:text-foreground">{t('footer.contact')}</a></li>
-                <li><a href="#" className="hover:text-foreground">{t('footer.privacy')}</a></li>
+                <li><a href="/privacy" className="hover:text-foreground">{t('footer.privacy')}</a></li>
+                <li><a href="/terms" className="hover:text-foreground">{t('footer.terms')}</a></li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-3">{t('footer.connect')}</h4>
               <ul className="space-y-2 text-muted-foreground">
-                <li><a href="#" className="hover:text-foreground">{t('footer.twitter')}</a></li>
+                <li><a href="#" className="hover:text-foreground">{t('footer.tiktok')}</a></li>
                 <li><a href="#" className="hover:text-foreground">{t('footer.instagram')}</a></li>
                 <li><a href="#" className="hover:text-foreground">{t('footer.youtube')}</a></li>
               </ul>
