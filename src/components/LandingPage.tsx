@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Smartphone, Target, Trophy, Users, Play, Apple, PlayCircle } from "lucide-react";
+import { ArrowRight, Smartphone, Target, Trophy, Users, Play, Apple, PlayCircle, Clock } from "lucide-react";
 import { useLanguage } from "@/hooks/useLanguage";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import appScreenshot1 from "@/assets/app-screenshot-1.png";
@@ -22,7 +22,7 @@ const LandingPage = () => {
                 alt="Golazo AI Logo" 
                 className="h-8 w-auto"
               />
-              <span className="font-bold text-xl">Golazo AI</span>
+              <span className="font-bold text-xl sm:text-xl md:text-xl lg:text-xl">Golazo AI</span>
             </div>
           </div>
           <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
@@ -228,12 +228,12 @@ const LandingPage = () => {
               <CardContent className="p-6">
                 <div className="mb-4">
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <Play className="h-6 w-6 text-primary" />
+                    <ArrowRight className="h-6 w-6 text-primary" />
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{t('feature5.title')}</h3>
+                <h3 className="text-xl font-semibold mb-2">{t('feature6.title')}</h3>
                 <p className="text-muted-foreground">
-                  {t('feature5.description')}
+                  {t('feature6.description')}
                 </p>
               </CardContent>
             </Card>
@@ -241,12 +241,12 @@ const LandingPage = () => {
               <CardContent className="p-6">
                 <div className="mb-4">
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <ArrowRight className="h-6 w-6 text-primary" />
+                    <Clock className="h-6 w-6 text-primary" />
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{t('feature6.title')}</h3>
+                <h3 className="text-xl font-semibold mb-2">{t('feature5.title')}</h3>
                 <p className="text-muted-foreground">
-                  {t('feature6.description')}
+                  {t('feature5.description')}
                 </p>
               </CardContent>
             </Card>
@@ -329,7 +329,7 @@ const LandingPage = () => {
                   alt="Golazo AI Logo" 
                   className="h-8 w-auto"
                 />
-                <span className="font-bold text-xl">Golazo AI</span>
+                <span className="font-bold text-xl sm:text-xl md:text-xl lg:text-xl">Golazo AI</span>
               </div>
               <p className="text-muted-foreground">
                 {t('footer.description')}
@@ -339,7 +339,7 @@ const LandingPage = () => {
               <h4 className="font-semibold mb-3">{t('footer.product')}</h4>
               <ul className="space-y-2 text-muted-foreground">
                 <li><a href="#features" className="hover:text-foreground">{t('nav.features')}</a></li>
-                <li><a href="#download" className="hover:text-foreground">{t('nav.download')}</a></li>
+                <li><a href="#" className="hover:text-foreground">{t('nav.download')}</a></li>
               </ul>
             </div>
             <div>

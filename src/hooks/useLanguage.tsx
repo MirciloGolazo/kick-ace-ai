@@ -55,8 +55,8 @@ const translations = {
     'feature4.title': 'Compete with Friends',
     'feature4.description': 'Challenge your friends in free kick competitions and climb the leaderboards.',
     
-    'feature5.title': 'Video Tutorials',
-    'feature5.description': 'Access detailed video tutorials breaking down the physics and technique of the perfect knuckleball.',
+    'feature5.title': 'More coming soon!',
+    'feature5.description': 'Give us your feedback in the app about which next skill we should add.',
     
     'feature6.title': 'Progress Tracking',
     'feature6.description': 'Track your improvement over time with detailed analytics and personalized training plans.',
@@ -91,7 +91,7 @@ const translations = {
     'footer.tiktok': 'TikTok',
     'footer.instagram': 'Instagram',
     'footer.youtube': 'YouTube',
-    'footer.copyright': '© 2024 Golazo AI. All rights reserved.',
+    'footer.copyright': '© 2025 Golazo AI. All rights reserved.',
   },
   da: {
     // Navigation
@@ -137,8 +137,8 @@ const translations = {
     'feature4.title': 'Konkurrér med venner',
     'feature4.description': 'Udfordre dine venner i frispark konkurrencer og klatr på toplisterne.',
     
-    'feature5.title': 'Video tutorials',
-    'feature5.description': 'Få adgang til detaljerede video tutorials der forklarer fysikken og teknikken bag den perfekte knuckleball.',
+    'feature5.title': 'Mere kommer snart!',
+    'feature5.description': 'Giv os din feedback i appen om hvilken næste færdighed vi skal tilføje.',
     
     'feature6.title': 'Fremskridtssporing',
     'feature6.description': 'Spor dine forbedringer over tid med detaljeret analyse og personlige træningsplaner.',
@@ -173,7 +173,7 @@ const translations = {
     'footer.tiktok': 'TikTok',
     'footer.instagram': 'Instagram',
     'footer.youtube': 'YouTube',
-    'footer.copyright': '© 2024 Golazo AI. Alle rettigheder forbeholdes.',
+    'footer.copyright': '© 2025 Golazo AI. Alle rettigheder forbeholdes.',
   },
   es: {
     // Navigation
@@ -219,8 +219,8 @@ const translations = {
     'feature4.title': 'Compite con amigos',
     'feature4.description': 'Desafía a tus amigos en competencias de tiros libres y escala las clasificaciones.',
     
-    'feature5.title': 'Tutoriales en video',
-    'feature5.description': 'Accede a tutoriales detallados en video que explican la física y técnica del knuckleball perfecto.',
+    'feature5.title': '¡Más próximamente!',
+    'feature5.description': 'Danos tu opinión en la aplicación sobre qué próxima habilidad deberíamos agregar.',
     
     'feature6.title': 'Seguimiento de progreso',
     'feature6.description': 'Rastrea tu mejora a lo largo del tiempo con análisis detallados y planes de entrenamiento personalizados.',
@@ -255,7 +255,7 @@ const translations = {
     'footer.tiktok': 'TikTok',
     'footer.instagram': 'Instagram',
     'footer.youtube': 'YouTube',
-    'footer.copyright': '© 2024 Golazo AI. Todos los derechos reservados.',
+    'footer.copyright': '© 2025 Golazo AI. Todos los derechos reservados.',
   },
 };
 
