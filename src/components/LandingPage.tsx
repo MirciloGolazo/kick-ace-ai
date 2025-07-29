@@ -21,7 +21,7 @@ const LandingPage = () => {
               <img 
                 src="/lovable-uploads/58dc850b-44ff-491e-93e4-b101d64c5ccd.png" 
                 alt="Golazo AI Logo" 
-                className="h-8 w-auto"
+                className="h-8 w-auto rounded-full"
               />
               <span className="font-bold text-sm sm:text-xl md:text-xl lg:text-xl">Golazo AI</span>
             </div>
@@ -258,7 +258,7 @@ const LandingPage = () => {
                 <img 
                   src="/lovable-uploads/58dc850b-44ff-491e-93e4-b101d64c5ccd.png" 
                   alt="Golazo AI Logo" 
-                  className="h-8 w-auto"
+                  className="h-8 w-auto rounded-full"
                 />
                 <span className="font-bold text-sm sm:text-xl md:text-xl lg:text-xl">Golazo AI</span>
               </div>
