@@ -7,6 +7,7 @@ import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import appScreenshot1 from "@/assets/app-screenshot-1.png";
 import appScreenshot2 from "@/assets/app-screenshot-2.png";
 import appScreenshot3 from "@/assets/app-screenshot-3.png";
+import feedbackScreenshot from "@/assets/app-screenshot-feedback.png";
 
 const LandingPage = () => {
   const { t } = useLanguage();
@@ -22,7 +23,7 @@ const LandingPage = () => {
                 alt="Golazo AI Logo" 
                 className="h-8 w-auto"
               />
-              <span className="font-bold text-xl sm:text-xl md:text-xl lg:text-xl">Golazo AI</span>
+              <span className="font-bold text-sm sm:text-xl md:text-xl lg:text-xl">Golazo AI</span>
             </div>
           </div>
           <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
@@ -75,8 +76,8 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* App Preview Section */}
-      <section className="py-20">
+      {/* Features Section */}
+      <section id="features" className="py-20">
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
             <div className="space-y-6">
@@ -157,99 +158,29 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section id="features" className="py-20 bg-gradient-section">
+      <section className="py-20 bg-gradient-section">
         <div className="container px-4 md:px-6">
-          <div className="text-center mb-12">
-            <Badge variant="secondary" className="mb-4">
-              {t('features.badge')}
-            </Badge>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              {t('features.title')}
-            </h2>
-            <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl mt-4">
-              {t('features.description')}
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="border-0 shadow-lg">
-              <CardContent className="p-6">
-                <div className="mb-4">
-                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <Smartphone className="h-6 w-6 text-primary" />
-                  </div>
-                </div>
-                <h3 className="text-xl font-semibold mb-2">{t('feature1.title')}</h3>
-                <p className="text-muted-foreground">
-                  {t('feature1.description')}
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="border-0 shadow-lg">
-              <CardContent className="p-6">
-                <div className="mb-4">
-                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <Target className="h-6 w-6 text-primary" />
-                  </div>
-                </div>
-                <h3 className="text-xl font-semibold mb-2">{t('feature2.title')}</h3>
-                <p className="text-muted-foreground">
-                  {t('feature2.description')}
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="border-0 shadow-lg">
-              <CardContent className="p-6">
-                <div className="mb-4">
-                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <Trophy className="h-6 w-6 text-primary" />
-                  </div>
-                </div>
-                <h3 className="text-xl font-semibold mb-2">{t('feature3.title')}</h3>
-                <p className="text-muted-foreground">
-                  {t('feature3.description')}
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="border-0 shadow-lg">
-              <CardContent className="p-6">
-                <div className="mb-4">
-                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <Users className="h-6 w-6 text-primary" />
-                  </div>
-                </div>
-                <h3 className="text-xl font-semibold mb-2">{t('feature4.title')}</h3>
-                <p className="text-muted-foreground">
-                  {t('feature4.description')}
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="border-0 shadow-lg">
-              <CardContent className="p-6">
-                <div className="mb-4">
-                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <ArrowRight className="h-6 w-6 text-primary" />
-                  </div>
-                </div>
-                <h3 className="text-xl font-semibold mb-2">{t('feature6.title')}</h3>
-                <p className="text-muted-foreground">
-                  {t('feature6.description')}
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="border-0 shadow-lg">
-              <CardContent className="p-6">
-                <div className="mb-4">
-                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <Clock className="h-6 w-6 text-primary" />
-                  </div>
-                </div>
-                <h3 className="text-xl font-semibold mb-2">{t('feature5.title')}</h3>
-                <p className="text-muted-foreground">
-                  {t('feature5.description')}
-                </p>
-              </CardContent>
-            </Card>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+            <div className="space-y-6">
+              <Badge variant="secondary">
+                Coming Soon
+              </Badge>
+              <h3 className="text-3xl font-bold tracking-tighter">
+                More coming soon!
+              </h3>
+              <p className="text-muted-foreground text-lg">
+                Give us your feedback in the app about which next skill we should add.
+              </p>
+            </div>
+            <div className="lg:col-span-2 flex justify-center">
+              <div className="relative">
+                <img 
+                  src={feedbackScreenshot} 
+                  alt="Golazo AI feedback interface for new features" 
+                  className="max-w-xs rounded-2xl shadow-2xl"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -329,7 +260,7 @@ const LandingPage = () => {
                   alt="Golazo AI Logo" 
                   className="h-8 w-auto"
                 />
-                <span className="font-bold text-xl sm:text-xl md:text-xl lg:text-xl">Golazo AI</span>
+                <span className="font-bold text-sm sm:text-xl md:text-xl lg:text-xl">Golazo AI</span>
               </div>
               <p className="text-muted-foreground">
                 {t('footer.description')}
@@ -339,7 +270,7 @@ const LandingPage = () => {
               <h4 className="font-semibold mb-3">{t('footer.product')}</h4>
               <ul className="space-y-2 text-muted-foreground">
                 <li><a href="#features" className="hover:text-foreground">{t('nav.features')}</a></li>
-                <li><a href="#" className="hover:text-foreground">{t('nav.download')}</a></li>
+                <li><a href="#" className="hover:text-foreground scroll-smooth" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>{t('nav.download')}</a></li>
               </ul>
             </div>
             <div>
