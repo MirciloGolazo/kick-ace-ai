@@ -16,7 +16,7 @@ const Terms = () => {
               <img 
                 src="/lovable-uploads/58dc850b-44ff-491e-93e4-b101d64c5ccd.png" 
                 alt="Golazo AI Logo" 
-                className="h-10 w-10"
+                className="h-10 w-10 rounded-full"
               />
               <span className="font-bold text-xl">Golazo AI</span>
             </div>
@@ -36,84 +36,80 @@ const Terms = () => {
         <div className="space-y-8">
           <div>
             <h1 className="text-4xl font-bold tracking-tighter mb-4">Terms & Conditions</h1>
-            <p className="text-muted-foreground">Last updated: January 2024 (Version 1.0)</p>
+            <p className="text-muted-foreground">Last Updated: July 30, 2025</p>
           </div>
 
           <div className="space-y-6">
             <section>
-              <h2 className="text-2xl font-semibold mb-3">1. Agreement to Terms</h2>
+              <h2 className="text-2xl font-semibold mb-3">1. Acceptance of Terms</h2>
               <p className="text-muted-foreground leading-relaxed">
-                By downloading, installing, or using the Golazo AI mobile application, you agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use our service.
+                By creating an account or using the Golazo AI application ("Service"), you agree to be bound by these Terms & Conditions ("Terms").
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-3">2. Description of Service</h2>
+              <h2 className="text-2xl font-semibold mb-3">2. Description of the Service</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Golazo AI is a mobile application that uses artificial intelligence to analyze football shooting techniques, particularly free kicks. The app provides feedback, training suggestions, and social features to help users improve their football skills.
+                The app provides feedback on video records of football/soccer moves and shots via AI. The Service is provided on an "as-is" basis.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-3">3. User Account and Registration</h2>
+              <h2 className="text-2xl font-semibold mb-3">3. User Accounts</h2>
               <p className="text-muted-foreground leading-relaxed">
-                You may be required to create an account to access certain features. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.
+                You are responsible for maintaining the security of your login information and for all activities that occur under your account.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-3">4. Data Collection and Privacy</h2>
+              <h2 className="text-2xl font-semibold mb-3">4. User Conduct</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Our collection and use of personal information is governed by our Privacy Policy. By using Golazo AI, you consent to the collection and use of your information as outlined in our Privacy Policy.
+                You agree not to misuse the Service. We have the right to delete users that we suspect are bots or who upload content that is political or that we deem inappropriate.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-3">5. User Content</h2>
+              <h2 className="text-2xl font-semibold mb-3">5. Intellectual Property</h2>
               <p className="text-muted-foreground leading-relaxed">
-                You retain ownership of videos and content you upload to Golazo AI. However, by uploading content, you grant us a worldwide, non-exclusive license to use, analyze, and process your content to provide our AI analysis services.
+                Golazo AI ApS retains all rights to its trademark and software. By using the service, you grant us a limited license to process the content you upload solely for the purpose of providing and improving the Service.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-3">6. Prohibited Uses</h2>
-              <div className="text-muted-foreground leading-relaxed space-y-2">
-                <p>You agree not to use Golazo AI to:</p>
-                <ul className="list-disc pl-6 space-y-1">
-                  <li>Upload inappropriate, offensive, or copyrighted content</li>
-                  <li>Attempt to reverse engineer or hack the application</li>
-                  <li>Use the service for any illegal purposes</li>
-                  <li>Interfere with the proper functioning of the service</li>
-                </ul>
+              <h2 className="text-2xl font-semibold mb-3">6. Advertisements</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                We may show advertisements within the app and might use user data for this purpose, in accordance with our Privacy Policy.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-3">7. Disclaimer of Warranties & Limitation of Liability</h2>
+              <div className="text-muted-foreground leading-relaxed space-y-3">
+                <p>The app is provided "as-is" without any warranties.</p>
+                <p>You agree that Golazo AI ApS has no responsibility for any type of injuries caused by using the app. You are responsible for your own safety while engaging in physical activities.</p>
               </div>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-3">7. Limitation of Liability</h2>
+              <h2 className="text-2xl font-semibold mb-3">8. Modifications to Terms</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Golazo AI is provided "as is" without warranties of any kind. We are not liable for any damages arising from your use of the application, including but not limited to direct, indirect, incidental, or consequential damages.
+                We reserve the right to modify these Terms. We will notify users of changes via in-app notification or email.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-3">8. Changes to Terms</h2>
+              <h2 className="text-2xl font-semibold mb-3">9. Governing Law and Disputes</h2>
               <p className="text-muted-foreground leading-relaxed">
-                We reserve the right to modify these terms at any time. We will notify users of material changes through the app or by email. Continued use of the service after changes constitutes acceptance of the new terms.
+                These Terms are governed by the laws of Denmark, and any disputes will be resolved in the courts of Copenhagen.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-3">9. Contact Information</h2>
+              <h2 className="text-2xl font-semibold mb-3">10. Contact Information</h2>
               <p className="text-muted-foreground leading-relaxed">
-                If you have any questions about these Terms & Conditions, please contact us at terms@golazoai.com.
+                For any questions regarding these Terms & Conditions, please contact us at hello@golazo.ai.
               </p>
             </section>
-          </div>
-
-          <div className="border-t pt-6">
-            <p className="text-sm text-muted-foreground">
-              Version History: v1.0 (January 2024) - Initial terms and conditions
-            </p>
           </div>
         </div>
       </div>
