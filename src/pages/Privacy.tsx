@@ -36,65 +36,109 @@ const Privacy = () => {
         <div className="space-y-8">
           <div>
             <h1 className="text-4xl font-bold tracking-tighter mb-4">Privacy Policy</h1>
-            <p className="text-muted-foreground">Last updated: January 2024 (Version 1.0)</p>
+            <p className="text-muted-foreground">Last Updated: July 30, 2025</p>
           </div>
 
           <div className="space-y-6">
+            <p className="text-muted-foreground leading-relaxed">
+              This Privacy Policy describes how Golazo AI ApS collects, uses, and protects your information when you use our mobile application.
+            </p>
+
             <section>
-              <h2 className="text-2xl font-semibold mb-3">1. Information We Collect</h2>
+              <h2 className="text-2xl font-semibold mb-3">1. Data Controller</h2>
+              <div className="text-muted-foreground leading-relaxed space-y-2">
+                <p>The data controller for your information is:</p>
+                <p><strong>Golazo AI ApS</strong></p>
+                <p>CVR: 45681513</p>
+                <p>Address: Lyshøjgårdsvej 91, st. th</p>
+                <p>Email: Hello@golazo.ai</p>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-3">2. Information We Collect</h2>
+              <div className="text-muted-foreground leading-relaxed space-y-4">
+                <p>We collect the following types of information:</p>
+                
+                <div>
+                  <p><strong>Account Information:</strong> When you create an account, we may collect information through various login methods, including transfers from platforms like TikTok, Instagram, and Snapchat. This data is used for login, creating your profile, and for leaderboard purposes.</p>
+                </div>
+
+                <div>
+                  <p><strong>Video and Biometric Data:</strong></p>
+                  <ul className="list-disc pl-6 space-y-1 mt-2">
+                    <li>We collect the videos you record and upload for processing.</li>
+                    <li>To analyze your technique, our AI processes your video to create a skeletal model. This is considered biometric data. We will ask for your explicit consent before processing this data.</li>
+                    <li>We also store the output picture from our machine learning model related to your player position.</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <p><strong>Feedback:</strong> We store feedback you provide in the app or via email to help us develop new features and improve the quality of the app.</p>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-3">3. How We Use Your Information & Legal Basis</h2>
               <div className="text-muted-foreground leading-relaxed space-y-3">
-                <p><strong>Personal Information:</strong> When you create an account, we collect your name, email address, and profile information.</p>
-                <p><strong>Video Content:</strong> We collect and analyze videos you upload for the purpose of providing AI-powered feedback on your football technique.</p>
-                <p><strong>Usage Data:</strong> We collect information about how you use the app, including features accessed, time spent, and performance metrics.</p>
-                <p><strong>Device Information:</strong> We may collect device-specific information such as device model, operating system, and unique device identifiers.</p>
+                <p>We use your information for the following purposes:</p>
+                
+                <div>
+                  <p><strong>To Provide and Improve the Service:</strong> We process your video and biometric data to provide you with AI-powered analysis of your soccer technique. The legal basis for processing biometric data is your <strong>Explicit Consent</strong>.</p>
+                </div>
+
+                <div>
+                  <p><strong>To Manage Your Account:</strong> We use your account information to manage your profile, login, and display your name and picture on leaderboards. The legal basis is the <strong>Performance of a Contract</strong>.</p>
+                </div>
+
+                <div>
+                  <p><strong>For Quality Improvements:</strong> We use your feedback to improve our app. The legal basis is our <strong>Legitimate Interest</strong>.</p>
+                </div>
               </div>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-3">2. How We Use Your Information</h2>
-              <div className="text-muted-foreground leading-relaxed space-y-2">
-                <p>We use your information to:</p>
-                <ul className="list-disc pl-6 space-y-1">
-                  <li>Provide AI analysis and feedback on your football technique</li>
-                  <li>Improve our machine learning algorithms and services</li>
-                  <li>Enable social features like leaderboards and competitions</li>
-                  <li>Send you important updates about the service</li>
-                  <li>Provide customer support and respond to your inquiries</li>
-                </ul>
+              <h2 className="text-2xl font-semibold mb-3">4. Data Storage, Processing, and Retention</h2>
+              <div className="text-muted-foreground leading-relaxed space-y-4">
+                <div>
+                  <p><strong>Data Processors:</strong> We use third-party services to process and store your data. All our primary processors use servers located in the EU.</p>
+                  <ul className="list-disc pl-6 space-y-1 mt-2">
+                    <li><strong>SupaBase (EU server):</strong> Used for collection of login, leaderboard, and profile information.</li>
+                    <li><strong>RunPod (EU server):</strong> Used for processing your video with our AI.</li>
+                    <li><strong>Google Cloud (EU server):</strong> Used for storing the videos you record and the machine learning output pictures.</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <p><strong>Data Retention:</strong></p>
+                  <ul className="list-disc pl-6 space-y-1 mt-2">
+                    <li>Feedback provided by you will be stored until it is no longer relevant for improving our features and quality.</li>
+                    <li>Other personal data will be stored for as long as your account is active or as needed to provide you with our services.</li>
+                  </ul>
+                </div>
               </div>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-3">3. Information Sharing</h2>
+              <h2 className="text-2xl font-semibold mb-3">5. Data Security</h2>
               <p className="text-muted-foreground leading-relaxed">
-                We do not sell your personal information to third parties. We may share your information in the following limited circumstances: with your consent, to comply with legal obligations, to protect our rights and safety, or with service providers who help us operate our business.
+                We are committed to protecting your data. We implement encryption, access controls, and other industry-standard security measures to safeguard user data.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-3">4. Data Security</h2>
-              <p className="text-muted-foreground leading-relaxed">
-                We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet is 100% secure.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-semibold mb-3">5. Data Retention</h2>
-              <p className="text-muted-foreground leading-relaxed">
-                We retain your personal information for as long as necessary to provide our services and fulfill the purposes outlined in this policy, unless a longer retention period is required by law.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-semibold mb-3">6. Your Rights</h2>
-              <div className="text-muted-foreground leading-relaxed space-y-2">
-                <p>You have the right to:</p>
+              <h2 className="text-2xl font-semibold mb-3">6. Your Rights Under GDPR</h2>
+              <div className="text-muted-foreground leading-relaxed space-y-3">
+                <p>You have certain rights regarding your personal data. You can exercise these rights at any time by contacting us at hello@golazo.ai. Your rights include:</p>
                 <ul className="list-disc pl-6 space-y-1">
-                  <li>Access and receive a copy of your personal information</li>
-                  <li>Correct inaccurate or incomplete information</li>
-                  <li>Delete your personal information (subject to certain exceptions)</li>
-                  <li>Object to or restrict certain processing of your information</li>
-                  <li>Withdraw consent where processing is based on consent</li>
+                  <li>The right to access your data.</li>
+                  <li>The right to rectification (correct incorrect data).</li>
+                  <li>The right to erasure (the "right to be forgotten").</li>
+                  <li>The right to restrict processing.</li>
+                  <li>The right to data portability.</li>
+                  <li>The right to object to processing.</li>
+                  <li>The right not to be subject to automated decision-making.</li>
                 </ul>
               </div>
             </section>
@@ -102,36 +146,16 @@ const Privacy = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-3">7. Children's Privacy</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Our service is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If we become aware that we have collected such information, we will take steps to delete it.
+                Users must be a minimum of 13 years of age to get access to the app. We do not knowingly collect personal information from children under 13.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-3">8. International Data Transfers</h2>
+              <h2 className="text-2xl font-semibold mb-3">8. Contact Us</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Your information may be transferred to and processed in countries other than your country of residence. We ensure appropriate safeguards are in place to protect your information during such transfers.
+                If you have any questions about this Privacy Policy, please contact us at Hello@golazo.ai.
               </p>
             </section>
-
-            <section>
-              <h2 className="text-2xl font-semibold mb-3">9. Changes to This Policy</h2>
-              <p className="text-muted-foreground leading-relaxed">
-                We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the new policy on this page and updating the "Last updated" date.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-semibold mb-3">10. Contact Us</h2>
-              <p className="text-muted-foreground leading-relaxed">
-                If you have any questions about this Privacy Policy, please contact us at privacy@golazoai.com.
-              </p>
-            </section>
-          </div>
-
-          <div className="border-t pt-6">
-            <p className="text-sm text-muted-foreground">
-              Version History: v1.0 (January 2024) - Initial privacy policy
-            </p>
           </div>
         </div>
       </div>
