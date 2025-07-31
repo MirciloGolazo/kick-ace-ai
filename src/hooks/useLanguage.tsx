@@ -110,16 +110,16 @@ const translations = {
     
     // App Preview Sections
     'preview1.badge': 'AI-drevet analyse',
-    'preview1.title': 'Spor dine skud',
-    'preview1.description': 'Få detaljeret analyse af hvert skud du tager. Vores AI analyserer din teknik, boldets bane og giver personlig feedback for at hjælpe dig med at forbedre dig.',
+    'preview1.title': 'Analyser dine skud',
+    'preview1.description': 'Få detaljeret analyse af hvert skud du tager. Vores AI analyserer din teknik og giver personlig feedback for at hjælpe dig med at forbedre dig.',
     
-    'preview2.badge': 'Video analyse',
-    'preview2.title': 'Bevægelsessporing',
-    'preview2.description': 'Avanceret computer vision teknologi sporer din bevægelse og boldkontakt i realtid og giver detaljeret indsigt i din skydteknik.',
+    'preview2.badge': 'Social konkurrence',
+    'preview2.title': 'Konkurrér og opnå',
+    'preview2.description': 'Udfordre venner, klatr på toplisterne og lås præstationer op i fremtiden. Gør træning sjovt med vores gamificerede tilgang til fodbold færdighedsudvikling.',
     
-    'preview3.badge': 'Social konkurrence',
-    'preview3.title': 'Konkurrér og opnå',
-    'preview3.description': 'Udfordre venner, klatr på toplisterne og lås præstationer op. Gør træning sjovt med vores gamificerede tilgang til fodbold færdighedsudvikling.',
+    'preview3.badge': 'Feedback',
+    'preview3.title': 'Hvad kommer der næste gang?',
+    'preview3.description': 'Fortæl os hvad du synes om appen og hvilke nye færdigheder du gerne vil lære!',
     
     // Features Section
     'features.badge': 'Funktioner',
@@ -192,16 +192,16 @@ const translations = {
     
     // App Preview Sections
     'preview1.badge': 'Análisis impulsado por IA',
-    'preview1.title': 'Rastrea tus tiros',
-    'preview1.description': 'Obtén análisis detallados de cada tiro que hagas. Nuestra IA analiza tu técnica, la trayectoria del balón y proporciona comentarios personalizados para ayudarte a mejorar.',
+    'preview1.title': 'Analiza tus tiros',
+    'preview1.description': 'Obtén análisis detallados de cada tiro que hagas. Nuestra IA analiza tu técnica y proporciona comentarios personalizados para ayudarte a mejorar.',
     
-    'preview2.badge': 'Análisis de video',
-    'preview2.title': 'Seguimiento de movimiento',
-    'preview2.description': 'La tecnología avanzada de visión por computadora rastrea tu movimiento y contacto con el balón en tiempo real, proporcionando información detallada sobre tu técnica de tiro.',
+    'preview2.badge': 'Competencia social',
+    'preview2.title': 'Compite y logra',
+    'preview2.description': 'Desafía a amigos, escala las clasificaciones y desbloquea logros en el futuro. Haz que el entrenamiento sea divertido con nuestro enfoque gamificado para el desarrollo de habilidades de fútbol.',
     
-    'preview3.badge': 'Competencia social',
-    'preview3.title': 'Compite y logra',
-    'preview3.description': 'Desafía a amigos, escala las clasificaciones y desbloquea logros. Haz que el entrenamiento sea divertido con nuestro enfoque gamificado para el desarrollo de habilidades de fútbol.',
+    'preview3.badge': 'Comentarios',
+    'preview3.title': '¿Qué viene después?',
+    'preview3.description': '¡Dinos qué piensas de la aplicación y qué nuevas habilidades quieres aprender!',
     
     // Features Section
     'features.badge': 'Características',
