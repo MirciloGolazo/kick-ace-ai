@@ -196,7 +196,7 @@ const LandingPage = () => {
               {t('about.description')}
             </p>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="max-w-4xl mx-auto">
             <div className="space-y-6">
               <div>
                 <h3 className="text-2xl font-semibold mb-3">{t('about.knuckleball.title')}</h3>
@@ -210,14 +210,6 @@ const LandingPage = () => {
                   {t('about.ai.description')}
                 </p>
               </div>
-            </div>
-            <div className="bg-muted rounded-lg p-8 text-center">
-              <div className="text-4xl font-bold text-primary mb-2">10,000+</div>
-              <p className="text-muted-foreground mb-4">{t('about.stats.kicks')}</p>
-              <div className="text-4xl font-bold text-primary mb-2">95%</div>
-              <p className="text-muted-foreground mb-4">{t('about.stats.accuracy')}</p>
-              <div className="text-4xl font-bold text-primary mb-2">5 {t('about.stats.time').includes('Minutes') ? 'Minutes' : t('about.stats.time').split(' ')[1]}</div>
-              <p className="text-muted-foreground">{t('about.stats.time')}</p>
             </div>
           </div>
         </div>
