@@ -122,11 +122,11 @@ const translations = {
     'preview1.description': 'Få detaljeret analyse af hvert skud du tager. Vores AI analyserer din teknik og giver personlig feedback for at hjælpe dig med at forbedre dig.',
     
     'preview2.badge': 'Social konkurrence',
-    'preview2.title': 'Konkurrér og opnå',
-    'preview2.description': 'Udfordre venner, klatr på toplisterne og lås præstationer op i fremtiden. Gør træning sjovt med vores gamificerede tilgang til fodbold færdighedsudvikling.',
+    'preview2.title': 'Konkurrér!',
+    'preview2.description': 'Udfordre venner, klatr op af toplisterne og lås spændende ting op i fremtiden. Gør træning sjovt med vores gamificerede tilgang til fodbold færdighedsudvikling.',
     
     'preview3.badge': 'Feedback',
-    'preview3.title': 'Hvad kommer der næste gang?',
+    'preview3.title': 'Hvad er det næste der kommer?',
     'preview3.description': 'Fortæl os hvad du synes om appen og hvilke nye færdigheder du gerne vil lære!',
     
     // Features Section
