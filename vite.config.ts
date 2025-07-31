@@ -5,6 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: "/kick-ace-ai/", // This is the line that's been added
   server: {
     host: "::",
     port: 8080,
