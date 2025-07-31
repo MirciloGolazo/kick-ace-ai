@@ -25,6 +25,10 @@ const translations = {
     'hero.downloadBtn': 'Download Now',
     'hero.watchDemo': 'Watch Demo',
     
+    // Demo Section
+    'demo.title': 'See Golazo AI in Action',
+    'demo.description': 'Watch how our AI analyzes your technique and provides instant feedback to improve your free kicks.',
+    
     // App Preview Sections
     'preview1.badge': 'AI-Powered Analysis',
     'preview1.title': 'Analyze Your Shots',
@@ -108,6 +112,10 @@ const translations = {
     'hero.downloadBtn': 'Download nu',
     'hero.watchDemo': 'Se demo',
     
+    // Demo Section
+    'demo.title': 'Se Golazo AI i aktion',
+    'demo.description': 'Se hvordan vores AI analyserer din teknik og giver øjeblikkelig feedback for at forbedre dine frispark.',
+    
     // App Preview Sections
     'preview1.badge': 'AI-drevet analyse',
     'preview1.title': 'Analyser dine skud',
@@ -189,6 +197,10 @@ const translations = {
     'hero.description': 'Perfecciona tu técnica de tiro con análisis impulsado por IA. Graba tus tiros, recibe comentarios instantáneos y compite con amigos para convertirte en el máximo goleador.',
     'hero.downloadBtn': 'Descargar ahora',
     'hero.watchDemo': 'Ver demo',
+    
+    // Demo Section
+    'demo.title': 'Ve Golazo AI en Acción',
+    'demo.description': 'Mira cómo nuestra IA analiza tu técnica y proporciona comentarios instantáneos para mejorar tus tiros libres.',
     
     // App Preview Sections
     'preview1.badge': 'Análisis impulsado por IA',
