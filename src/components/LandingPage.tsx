@@ -7,7 +7,7 @@ import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import appScreenshot1 from "@/assets/app-screenshot-1.png";
 import appScreenshot2 from "@/assets/app-screenshot-2.png";
 import appScreenshot3 from "@/assets/app-screenshot-3.png";
-import feedbackScreenshot from "@/assets/app-screenshot-feedback.png";
+
 
 const LandingPage = () => {
   const { t } = useLanguage();
@@ -158,32 +158,6 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-section">
-        <div className="container px-4 md:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
-            <div className="space-y-6">
-              <Badge variant="secondary">
-                Coming Soon
-              </Badge>
-              <h3 className="text-3xl font-bold tracking-tighter">
-                More coming soon!
-              </h3>
-              <p className="text-muted-foreground text-lg">
-                Give us your feedback in the app about which next skill we should add.
-              </p>
-            </div>
-            <div className="lg:col-span-2 flex justify-center">
-              <div className="relative">
-                <img 
-                  src={feedbackScreenshot} 
-                  alt="Golazo AI feedback interface for new features" 
-                  className="max-w-xs rounded-2xl shadow-2xl"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Watch Demo Section */}
       <section id="download" className="py-20">
@@ -276,17 +250,17 @@ const LandingPage = () => {
             <div>
               <h4 className="font-semibold mb-3">{t('footer.support')}</h4>
               <ul className="space-y-2 text-muted-foreground">
-                <li><a href="#" className="hover:text-foreground">{t('footer.contact')}</a></li>
+                <li><a href="/contact" className="hover:text-foreground">{t('footer.contact')}</a></li>
                 <li><a href="/privacy" className="hover:text-foreground">{t('footer.privacy')}</a></li>
                 <li><a href="/terms" className="hover:text-foreground">{t('footer.terms')}</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-3">{t('footer.connect')}</h4>
+              <h4 className="font-semibold mb-3">Follow us on</h4>
               <ul className="space-y-2 text-muted-foreground">
-                <li><a href="#" className="hover:text-foreground">{t('footer.tiktok')}</a></li>
-                <li><a href="#" className="hover:text-foreground">{t('footer.instagram')}</a></li>
-                <li><a href="#" className="hover:text-foreground">{t('footer.youtube')}</a></li>
+                <li><a href="https://www.tiktok.com/@golazo_ai" className="hover:text-foreground" target="_blank" rel="noopener noreferrer">{t('footer.tiktok')}</a></li>
+                <li><a href="https://www.instagram.com/golazoai/" className="hover:text-foreground" target="_blank" rel="noopener noreferrer">{t('footer.instagram')}</a></li>
+                <li><a href="https://www.youtube.com/@GolazoAI" className="hover:text-foreground" target="_blank" rel="noopener noreferrer">{t('footer.youtube')}</a></li>
               </ul>
             </div>
           </div>
