@@ -27,16 +27,17 @@ const translations = {
     
     // App Preview Sections
     'preview1.badge': 'AI-Powered Analysis',
-    'preview1.title': 'Track Your Shots',
-    'preview1.description': 'Get detailed analytics on every shot you take. Our AI analyzes your technique, ball trajectory, and provides personalized feedback to help you improve.',
+    'preview1.title': 'Analyze Your Shots',
+    'preview1.description': 'Get detailed analytics on every shot you take. Our AI analyzes your technique, and provides personalized feedback to help you improve.',    
     
-    'preview2.badge': 'Video Analysis',
-    'preview2.title': 'Motion Tracking',
-    'preview2.description': 'Advanced computer vision technology tracks your movement and ball contact in real-time, providing detailed insights into your shooting technique.',
-    
-    'preview3.badge': 'Social Competition',
-    'preview3.title': 'Compete & Achieve',
-    'preview3.description': 'Challenge friends, climb leaderboards, and unlock achievements. Make training fun with our gamified approach to football skill development.',
+    'preview2.badge': 'Social Competition',
+    'preview2.title': 'Compete & Achieve',
+    'preview2.description': 'Challenge friends, climb leaderboards, and unlock achievements in the future. Make training fun with our gamified approach to football skill development.',
+
+    'preview3.badge': 'Feedback',
+    'preview3.title': 'What'\'s coming next?',
+    'preview3.description': 'Let us know what you think of the app and which new skills you want to learn!',
+
     
     // Features Section
     'features.badge': 'Features',
