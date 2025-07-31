@@ -167,10 +167,10 @@ const LandingPage = () => {
               {t('hero.watchDemo')}
             </Badge>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              See Golazo AI in Action
+              {t('demo.title')}
             </h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl mt-4">
-              Watch how our AI analyzes your technique and provides instant feedback to improve your free kicks.
+              {t('demo.description')}
             </p>
           </div>
           <div className="flex justify-center">
