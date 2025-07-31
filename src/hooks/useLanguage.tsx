@@ -71,7 +71,7 @@ const translations = {
     // About Section
     'about.badge': 'About',
     'about.title': 'The Science Behind the Perfect Free Kick',
-    'about.description': 'Our AI analyzes data points from Cristiano Ronaldo''s famous free kicks to help you understand and master the knuckleball technique that makes goalkeepers helpless.',
+    'about.description': 'Our AI analyzes data points from Cristiano Ronaldo\'s famous free kicks to help you understand and master the knuckleball technique that makes goalkeepers helpless.',
     'about.knuckleball.title': 'What is a Knuckleball?',
     'about.knuckleball.description': 'The knuckleball is a technique where the ball travels with minimal rotation, causing unpredictable movement through the air. Cristiano Ronaldo has perfected this technique, making his free kicks nearly impossible to save.',
     'about.ai.title': 'AI-Powered Analysis',
