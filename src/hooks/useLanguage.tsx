@@ -35,7 +35,7 @@ const translations = {
     'preview2.description': 'Challenge friends, climb leaderboards, and unlock achievements in the future. Make training fun with our gamified approach to football skill development.',
 
     'preview3.badge': 'Feedback',
-    'preview3.title': 'What'\'s coming next?',
+    'preview3.title': 'What\'s coming next?',
     'preview3.description': 'Let us know what you think of the app and which new skills you want to learn!',
 
     
