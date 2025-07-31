@@ -5,7 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/kick-ace-ai/", // This is the line that's been added
+  // Change this line back to "/" for the custom domain
+  base: "/",
   server: {
     host: "::",
     port: 8080,
