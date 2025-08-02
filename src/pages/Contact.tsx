@@ -13,7 +13,7 @@ const Contact = () => {
           <div className="mr-4 flex">
             <div className="mr-6 flex items-center space-x-2">
               <img 
-                src="/lovable-uploads/58dc850b-44ff-491e-93e4-b101d64c5ccd.png" 
+                src="/lovable-uploads/logo.png" 
                 alt="Golazo AI Logo" 
                 className="h-8 w-auto rounded-full"
               />
