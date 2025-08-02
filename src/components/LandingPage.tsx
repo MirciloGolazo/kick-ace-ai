@@ -112,7 +112,7 @@ const LandingPage = () => {
                 <img 
                   src={appScreenshot2} 
                   alt="Golazo AI leaderboard and competition" 
-                  className="max-w-xs rounded-2xl shadow-2xl"
+                  className="max-w-xs rounded-2xl"
                 />
               </div>
             </div>
@@ -150,7 +150,7 @@ const LandingPage = () => {
                 <img 
                   src={appScreenshot3} 
                   alt="Golazo AI feedback and technique analysis" 
-                  className="max-w-xs rounded-2xl shadow-2xl"
+                  className="max-w-xs rounded-2xl"
                 />
               </div>
             </div>
