@@ -96,7 +96,7 @@ const LandingPage = () => {
                 <img 
                   src={appScreenshot1} 
                   alt="Golazo AI shot analysis interface" 
-                  className="max-w-xs rounded-2xl shadow-2xl"
+                  className="max-w-xs rounded-2xl"
                 />
               </div>
             </div>
