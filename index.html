@@ -22,6 +22,16 @@
 
     <meta property="og:url" content="https://www.golazo.ai" />
 
+    <script>
+  (function() {
+    const params = new URLSearchParams(window.location.search);
+    const path = params.get('p');
+    if (path) {
+      window.history.replaceState(null, null, '/' + path + params.toString().replace(/&?p=[^&]*/, '').replace(/^&/, '?'));
+    }
+  }());
+</script>
+
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
