@@ -63,14 +63,22 @@ const LandingPage = () => {
               </p>
             </div>
             <div className="flex flex-col gap-4 pt-4 w-full max-w-md mx-auto">
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 w-full">
-                <Apple className="mr-2 h-5 w-5" />
-                {t('download.ios')}
-              </Button>
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 w-full">
-                <PlayCircle className="mr-2 h-5 w-5" />
-                {t('download.android')}
-              </Button>
+              <a href="#" aria-label={t('download.ios')} className="w-full inline-flex justify-center">
+                <img
+                  src="/badges/app-store-badge.svg"
+                  alt="Download on the App Store - Golazo AI"
+                  className="h-12 md:h-14 w-auto"
+                  loading="lazy"
+                />
+              </a>
+              <a href="#" aria-label={t('download.android')} className="w-full inline-flex justify-center">
+                <img
+                  src="/badges/google-play-badge.svg"
+                  alt="Get it on Google Play - Golazo AI"
+                  className="h-12 md:h-14 w-auto"
+                  loading="lazy"
+                />
+              </a>
             </div>
           </div>
         </div>
