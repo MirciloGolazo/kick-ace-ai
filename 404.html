@@ -4,13 +4,16 @@
     <meta charset="utf-8">
     <title>Golazo AI - Redirecting...</title>
     <script>
-      // For SPA routing - preserve the original path so React Router can handle it
-      const path = window.location.pathname;
-      const search = window.location.search;
-      
-      // Redirect to index.html but preserve the path in the URL
-      // This allows React Router to pick up the correct route
-      window.location.replace('/#' + path + (search || ''));
+      // GitHub Pages SPA redirect - encode the original path as a parameter
+      var segmentCount = 1;
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
     </script>
   </head>
   <body>
