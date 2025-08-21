@@ -4,17 +4,12 @@
     <meta charset="utf-8">
     <title>Golazo AI - Redirecting...</title>
     <script>
-      // Get the path the user tried to access
+      // For SPA routing - redirect to index.html with the original path preserved
       const path = window.location.pathname;
-
-      // Create a URL object for your site's root
-      const home = new URL(window.location.origin);
-
-      // Add a query parameter with the path
-      home.searchParams.set('p', path.substring(1)); // e.g., ?p=contact
-
-      // Redirect to the homepage with the path information
-      window.location.replace(home.href);
+      const search = window.location.search;
+      
+      // Simply redirect to the root, React Router will handle the routing
+      window.location.replace('/' + (search || ''));
     </script>
   </head>
   <body>
