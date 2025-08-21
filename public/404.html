@@ -4,16 +4,17 @@
     <meta charset="utf-8">
     <title>Golazo AI - Redirecting...</title>
     <script>
-      // GitHub Pages SPA redirect - encode the original path as a parameter
-      var segmentCount = 1;
-      var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?/' +
-        l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
+      // Get the path the user tried to access
+      const path = window.location.pathname;
+
+      // Create a URL object for your site's root
+      const home = new URL(window.location.origin);
+
+      // Add a query parameter with the path
+      home.searchParams.set('p', path.substring(1)); // e.g., ?p=contact
+
+      // Redirect to the homepage with the path information
+      window.location.replace(home.href);
     </script>
   </head>
   <body>
