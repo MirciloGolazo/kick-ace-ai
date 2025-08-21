@@ -16,7 +16,7 @@ const Privacy = () => {
               <img 
                 src="/lovable-uploads/logo.png" 
                 alt="Golazo AI Logo" 
-                className="h-10 w-10"
+                className="h-8 w-auto rounded-full"
               />
               <span className="font-bold text-xl">Golazo AI</span>
             </div>
