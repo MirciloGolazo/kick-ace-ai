@@ -36,7 +36,7 @@ const Privacy = () => {
         <div className="space-y-8">
           <div>
             <h1 className="text-4xl font-bold tracking-tighter mb-4">Privacy Policy</h1>
-            <p className="text-muted-foreground">Last Updated: July 30, 2025</p>
+            <p className="text-muted-foreground">Last Updated: August 23, 2025</p>
           </div>
 
           <div className="space-y-6">
@@ -52,48 +52,49 @@ const Privacy = () => {
                 <p>CVR: 45681513</p>
                 <p>Address: Lyshøjgårdsvej 91, st. th</p>
                 <p>Email: Hello@golazo.ai</p>
+                <p>Hereafter mentioned as "Golazo AI"</p>
               </div>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-3">2. Information We Collect</h2>
+              <h2 className="text-2xl font-semibold mb-3">2. Information Golazo AI Collects</h2>
               <div className="text-muted-foreground leading-relaxed space-y-4">
-                <p>We collect the following types of information:</p>
+                <p>Golazo AI collects the following types of information:</p>
                 
                 <div>
-                  <p><strong>Account Information:</strong> When you create an account, we may collect information through various login methods, including transfers from platforms like TikTok, Instagram, and Snapchat. This data is used for login, creating your profile, and for leaderboard purposes.</p>
+                  <p><strong>Account Information:</strong> When you create an account, Golazo AI may collect information through various login methods, including transfers from platforms like TikTok, Instagram, and Snapchat. This data is used for login, creating your profile, and for leaderboard purposes.</p>
                 </div>
 
                 <div>
-                  <p><strong>Video and Biometric Data:</strong></p>
+                  <p><strong>Video and Personal Data:</strong></p>
                   <ul className="list-disc pl-6 space-y-1 mt-2">
-                    <li>We collect the videos you record and upload for processing.</li>
-                    <li>To analyze your technique, our AI processes your video to create a skeletal model. This is considered biometric data. We will ask for your explicit consent before processing this data.</li>
-                    <li>We also store the output picture from our machine learning model related to your player position.</li>
+                    <li>Golazo AI stores the videos you record and upload for processing.</li>
+                    <li>To analyze your technique, Golazo AI processes your video to recreate your body position.</li>
+                    <li>Golazo AI also stores the output picture from our machine learning model related to your player position.</li>
                   </ul>
                 </div>
 
                 <div>
-                  <p><strong>Feedback:</strong> We store feedback you provide in the app or via email to help us develop new features and improve the quality of the app.</p>
+                  <p><strong>Feedback:</strong> Golazo AI store feedback you provide in the app or via email to help us develop new features and improve the quality of the app.</p>
                 </div>
               </div>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-3">3. How We Use Your Information & Legal Basis</h2>
+              <h2 className="text-2xl font-semibold mb-3">3. How Golazo AI Uses Your Information & Legal Basis</h2>
               <div className="text-muted-foreground leading-relaxed space-y-3">
-                <p>We use your information for the following purposes:</p>
+                <p>Golazo AI uses your information for the following purposes:</p>
                 
                 <div>
-                  <p><strong>To Provide and Improve the Service:</strong> We process your video and biometric data to provide you with AI-powered analysis of your soccer technique. The legal basis for processing biometric data is your <strong>Explicit Consent</strong>.</p>
+                  <p><strong>To Provide and Improve the Service:</strong> Golazo AI processes your video and biometric data to provide you with AI-poGolazo AIred analysis of your soccer technique. The legal basis for processing biometric data is your <strong>Explicit Consent</strong>.</p>
                 </div>
 
                 <div>
-                  <p><strong>To Manage Your Account:</strong> We use your account information to manage your profile, login, and display your name and picture on leaderboards. The legal basis is the <strong>Performance of a Contract</strong>.</p>
+                  <p><strong>To Manage Your Account:</strong> Golazo AI uses your account information to manage your profile, login, and display your name and picture on leaderboards. The legal basis is the <strong>Performance of a Contract</strong>.</p>
                 </div>
 
                 <div>
-                  <p><strong>For Quality Improvements:</strong> We use your feedback to improve our app. The legal basis is our <strong>Legitimate Interest</strong>.</p>
+                  <p><strong>For Quality Improvements:</strong> Golazo AI uses your feedback to improve our app. The legal basis is our <strong>Legitimate Interest</strong>.</p>
                 </div>
               </div>
             </section>
@@ -102,19 +103,25 @@ const Privacy = () => {
               <h2 className="text-2xl font-semibold mb-3">4. Data Storage, Processing, and Retention</h2>
               <div className="text-muted-foreground leading-relaxed space-y-4">
                 <div>
-                  <p><strong>Data Processors:</strong> We use third-party services to process and store your data. All our primary processors use servers located in the EU.</p>
+                  <p><strong>Data Storage:</strong> Golazo AI uses third-party services to store your data. All our primary processors use servers located in the EU.</p>
                   <ul className="list-disc pl-6 space-y-1 mt-2">
                     <li><strong>SupaBase (EU server):</strong> Used for collection of login, leaderboard, and profile information.</li>
-                    <li><strong>RunPod (EU server):</strong> Used for processing your video with our AI.</li>
                     <li><strong>Google Cloud (EU server):</strong> Used for storing the videos you record and the machine learning output pictures.</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <p><strong>Data Transfer:</strong> Golazo AI uses third-party services to process your data. All our primary processors use servers located in the EU.</p>
+                  <ul className="list-disc pl-6 space-y-1 mt-2">
+                    <li><strong>RunPod (EU server):</strong> Used for processing your video with our AI.</li>
                   </ul>
                 </div>
 
                 <div>
                   <p><strong>Data Retention:</strong></p>
                   <ul className="list-disc pl-6 space-y-1 mt-2">
-                    <li>Feedback provided by you will be stored until it is no longer relevant for improving our features and quality.</li>
-                    <li>Other personal data will be stored for as long as your account is active or as needed to provide you with our services.</li>
+                    <li>Feedback provided by you will be stored for 6 months after it is no longer relevant for improving our features and quality.</li>
+                    <li>User profiles and the associated personal data will be stored for as long as your account is active or as needed to provide you with our services. Once deactivated Golazo AI reserves the right to store them up to 5 years for legal reasons.</li>
                   </ul>
                 </div>
               </div>
@@ -123,7 +130,7 @@ const Privacy = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-3">5. Data Security</h2>
               <p className="text-muted-foreground leading-relaxed">
-                We are committed to protecting your data. We implement encryption, access controls, and other industry-standard security measures to safeguard user data.
+                Golazo AI is committed to protecting your data. Golazo AI implements encryption, access controls, and other industry-standard security measures to safeguard user data.
               </p>
             </section>
 
@@ -146,15 +153,38 @@ const Privacy = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-3">7. Children's Privacy</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Users must be a minimum of 13 years of age to get access to the app. We do not knowingly collect personal information from children under 13.
+                Users must be a minimum of 13 years of age to get access to the app. Golazo AI does not knowingly collect personal information from children under 13.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-3">8. Contact Us</h2>
+              <h2 className="text-2xl font-semibold mb-3">8. Changes to our privacy policy</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Major changes to our privacy policy will be presented to the user at login where they will need to accept them to continue using our services.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-3">9. Contact Us</h2>
               <p className="text-muted-foreground leading-relaxed">
                 If you have any questions about this Privacy Policy, please contact us at Hello@golazo.ai.
               </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-3">10. Complaints</h2>
+              <div className="text-muted-foreground leading-relaxed space-y-3">
+                <p>If you have concerns about our processing of your personal data, you have the right to lodge a complaint with the Danish Data Protection Agency (Datatilsynet).</p>
+                <div className="space-y-1">
+                  <p><strong>Datatilsynet</strong></p>
+                  <p>Carl Jacobsens Vej 35</p>
+                  <p>2500 Valby</p>
+                  <p>Denmark</p>
+                  <p>Telephone: +45 33 19 32 00</p>
+                  <p>Email: dt@datatilsynet.dk</p>
+                  <p>Website: www.datatilsynet.dk</p>
+                </div>
+              </div>
             </section>
           </div>
         </div>
