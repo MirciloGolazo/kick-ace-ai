@@ -182,10 +182,12 @@ const LandingPage = () => {
             </p>
           </div>
           <div className="flex justify-center">
-            <Button variant="outline" size="lg" className="min-w-48">
-              <Play className="mr-2 h-5 w-5" />
-              {t('hero.watchDemo')}
-            </Button>
+            <a href="https://www.youtube.com/shorts/6CnkRnNO4jU" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="lg" className="min-w-48">
+                <Play className="mr-2 h-5 w-5" />
+                {t('hero.watchDemo')}
+              </Button>
+            </a>
           </div>
         </div>
       </section>
