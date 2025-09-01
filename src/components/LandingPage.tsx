@@ -63,7 +63,7 @@ const LandingPage = () => {
               </p>
             </div>
             <div className="flex flex-col gap-4 pt-4 w-full max-w-md mx-auto">
-              <a href="#" aria-label={t('download.ios')} className="w-full inline-flex justify-center">
+              <a href="https://apps.apple.com/ca/app/golazo-ai/id6749970596" aria-label={t('download.ios')} className="w-full inline-flex justify-center" target="_blank" rel="noopener noreferrer">
                 <img
                   src="/badges/app-store-badge.svg"
                   alt="Download on the App Store - Golazo AI"
