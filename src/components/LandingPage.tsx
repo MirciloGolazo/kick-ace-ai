@@ -71,7 +71,7 @@ const LandingPage = () => {
                   loading="lazy"
                 />
               </a>
-              <a href="#" aria-label={t('download.android')} className="w-full inline-flex justify-center">
+              <a href="https://play.google.com/store/apps/details?id=ai.golazo.app&hl=en" aria-label={t('download.android')} className="w-full inline-flex justify-center" target="_blank" rel="noopener noreferrer">
                 <img
                   src="/badges/google-play-badge.svg"
                   alt="Get it on Google Play - Golazo AI"
@@ -261,6 +261,7 @@ const LandingPage = () => {
                 <li><a href="https://www.tiktok.com/@golazo_ai" className="hover:text-foreground" target="_blank" rel="noopener noreferrer">{t('footer.tiktok')}</a></li>
                 <li><a href="https://www.instagram.com/golazoai/" className="hover:text-foreground" target="_blank" rel="noopener noreferrer">{t('footer.instagram')}</a></li>
                 <li><a href="https://www.youtube.com/@GolazoAI" className="hover:text-foreground" target="_blank" rel="noopener noreferrer">{t('footer.youtube')}</a></li>
+                <li><a href="http://linkedin.com/company/golazo-ai" className="hover:text-foreground" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
               </ul>
             </div>
           </div>
