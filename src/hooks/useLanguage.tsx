@@ -85,6 +85,11 @@ const translations = {
     'about.stats.accuracy': 'Accuracy improvement',
     'about.stats.time': 'Average learning time',
     
+    // Top Countries Section
+    'countries.badge': 'Global Community',
+    'countries.title': 'Top 10 Countries',
+    'countries.description': 'Our users come from all over the world. These are the top 10 countries where Golazo AI is helping players master their skills.',
+    
     // Footer
     'footer.description': 'Master football skills with AI-powered analysis and training.',
     'footer.product': 'Product',
@@ -171,6 +176,11 @@ const translations = {
     'about.stats.accuracy': 'Præcisionsforbedring',
     'about.stats.time': 'Gennemsnitlig indlæringstid',
     
+    // Top Countries Section
+    'countries.badge': 'Globalt Fællesskab',
+    'countries.title': 'Top 10 lande',
+    'countries.description': 'Vores brugere kommer fra hele verden. Dette er de top 10 lande, hvor Golazo AI hjælper spillere med at mestre deres færdigheder.',
+    
     // Footer
     'footer.description': 'Mestre fodbold færdigheder med AI-drevet analyse og træning.',
     'footer.product': 'Produkt',
@@ -256,6 +266,11 @@ const translations = {
     'about.stats.kicks': 'Tiros libres analizados',
     'about.stats.accuracy': 'Mejora de precisión',
     'about.stats.time': 'Tiempo promedio de aprendizaje',
+    
+    // Top Countries Section
+    'countries.badge': 'Comunidad Global',
+    'countries.title': 'Top 10 Países',
+    'countries.description': 'Nuestros usuarios vienen de todo el mundo. Estos son los 10 principales países donde Golazo AI está ayudando a los jugadores a dominar sus habilidades.',
     
     // Footer
     'footer.description': 'Domina las habilidades del fútbol con análisis y entrenamiento impulsado por IA.',
