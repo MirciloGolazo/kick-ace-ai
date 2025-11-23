@@ -225,6 +225,44 @@ const LandingPage = () => {
         </div>
       </section>
 
+      {/* Top Countries Section */}
+      <section className="py-20">
+        <div className="container px-4 md:px-6">
+          <div className="text-center mb-12">
+            <Badge variant="secondary" className="mb-4">
+              {t('countries.badge')}
+            </Badge>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              {t('countries.title')}
+            </h2>
+            <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl mt-4">
+              {t('countries.description')}
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
+            {[
+              { flag: '🇺🇸', name: 'United States' },
+              { flag: '🇬🇹', name: 'Guatemala' },
+              { flag: '🇵🇪', name: 'Peru' },
+              { flag: '🇲🇽', name: 'Mexico' },
+              { flag: '🇸🇻', name: 'El Salvador' },
+              { flag: '🇭🇳', name: 'Honduras' },
+              { flag: '🇨🇴', name: 'Colombia' },
+              { flag: '🇧🇴', name: 'Bolivia' },
+              { flag: '🇩🇰', name: 'Denmark' },
+              { flag: '🇳🇮', name: 'Nicaragua' },
+            ].map((country) => (
+              <Card key={country.name} className="border-2 border-primary hover:shadow-lg transition-shadow">
+                <CardContent className="p-6 flex flex-col items-center justify-center space-y-3">
+                  <div className="text-6xl">{country.flag}</div>
+                  <p className="font-semibold text-center text-sm">{country.name}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="border-t bg-background">
         <div className="container px-4 md:px-6 py-12">
